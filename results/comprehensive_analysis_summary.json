@@ -1,0 +1,21 @@
+{
+  "gin_metrics": [
+    0.9509841652658754,
+    0.9008054332338787,
+    0.7946398377636378
+  ],
+  "gat_metrics": [
+    0.9367393317230113,
+    0.9047602383838431,
+    0.8056105326804156
+  ],
+  "analysis_names": [
+    "Cross-Validation",
+    "Standardized (Micro)",
+    "Standardized (Macro)"
+  ],
+  "overall_gin_mean": 0.8821431454211307,
+  "overall_gat_mean": 0.8823700342624233,
+  "overall_gin_std": 0.06517718376515981,
+  "overall_gat_std": 0.05582521183740964
+}

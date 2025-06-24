@@ -1,0 +1,8 @@
+{
+  "gin_mean_entropy": 2.73917555809021,
+  "gat_mean_entropy": 3.2271528244018555,
+  "gin_std_entropy": 0.710959255695343,
+  "gat_std_entropy": 0.4761243164539337,
+  "gin_uncertain_samples_count": 330,
+  "gat_uncertain_samples_count": 330
+}

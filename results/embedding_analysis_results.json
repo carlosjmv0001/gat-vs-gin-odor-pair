@@ -1,0 +1,13 @@
+{
+  "gin_embedding_shape": [
+    3300,
+    86
+  ],
+  "gat_embedding_shape": [
+    3300,
+    86
+  ],
+  "gin_kmeans_inertia": 252725.0,
+  "gat_kmeans_inertia": 160330.890625,
+  "note": "Incompatible dimensions for direct centroid comparison"
+}

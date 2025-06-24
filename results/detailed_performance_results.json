@@ -1,0 +1,507 @@
+{
+  "class_names": [
+    "balsamic",
+    "floral",
+    "fruity",
+    "green",
+    "musk",
+    "musty",
+    "spicy",
+    "vanilla",
+    "waxy",
+    "woody",
+    "berry",
+    "creamy",
+    "honey",
+    "nutty",
+    "caramellic",
+    "earthy",
+    "ethereal",
+    "fatty",
+    "fermented",
+    "herbal",
+    "sulfurous",
+    "tropical",
+    "aldehydic",
+    "buttery",
+    "coffee",
+    "soapy",
+    "alliaceous",
+    "citrus",
+    "minty",
+    "cooling",
+    "camphoreous",
+    "animal",
+    "amber"
+  ],
+  "gin_aurocs": [
+    0.8512891026234143,
+    0.8467571077091306,
+    0.7858938970717076,
+    0.659742430225276,
+    0.8501412717864922,
+    0.5122356589147288,
+    0.6584454825664671,
+    0.9926283026374295,
+    0.914088074998439,
+    0.8898349626826447,
+    0.47953959628992293,
+    0.8773083971617874,
+    0.9776676563045757,
+    0.87634375,
+    0.8208263794819599,
+    0.38460296314238424,
+    0.9466421343146274,
+    0.8545421810699587,
+    0.9292806034721838,
+    0.6405799563212812,
+    0.9785736386138615,
+    0.37668260593161773,
+    0.8027059802639401,
+    0.9060161385636365,
+    0.933647607461476,
+    0.4064550281525209,
+    0.9690309487569762,
+    0.752811569442038,
+    0.8640458531796049,
+    0.7249240121580547,
+    0.9696525194770206,
+    0.9427762612475988,
+    0.8473999593743652
+  ],
+  "gat_aurocs": [
+    0.8390732843685548,
+    0.8216634053696298,
+    0.793164225564065,
+    0.7255508663207587,
+    0.8326269744008715,
+    0.5850418604651163,
+    0.7281188790306663,
+    0.9697409374926867,
+    0.876856452202767,
+    0.9076856883725819,
+    0.5762043826891632,
+    0.6842958507588929,
+    0.9547349807893817,
+    0.942075,
+    0.8812219819037712,
+    0.35064748653219047,
+    0.9311993332232522,
+    0.8731790123456791,
+    0.8160879693826613,
+    0.6133875272991992,
+    0.982527664531159,
+    0.4499571574670389,
+    0.7883485911306622,
+    0.7326207123769082,
+    0.9693582725060828,
+    0.7048877909494858,
+    0.9758904109589042,
+    0.7539116173928461,
+    0.8709848615515251,
+    0.8009726443768997,
+    0.9727883010649684,
+    0.9184106763724599,
+    0.9619303947457511
+  ],
+  "difficulty_ranking": [
+    {
+      "class": "earthy",
+      "gin_auroc": 0.38460296314238424,
+      "gat_auroc": 0.35064748653219047,
+      "avg_auroc": 0.3676252248372873,
+      "frequency": 69.0
+    },
+    {
+      "class": "tropical",
+      "gin_auroc": 0.37668260593161773,
+      "gat_auroc": 0.4499571574670389,
+      "avg_auroc": 0.4133198816993283,
+      "frequency": 11.0
+    },
+    {
+      "class": "berry",
+      "gin_auroc": 0.47953959628992293,
+      "gat_auroc": 0.5762043826891632,
+      "avg_auroc": 0.5278719894895431,
+      "frequency": 43.0
+    },
+    {
+      "class": "musty",
+      "gin_auroc": 0.5122356589147288,
+      "gat_auroc": 0.5850418604651163,
+      "avg_auroc": 0.5486387596899225,
+      "frequency": 75.0
+    },
+    {
+      "class": "soapy",
+      "gin_auroc": 0.4064550281525209,
+      "gat_auroc": 0.7048877909494858,
+      "avg_auroc": 0.5556714095510034,
+      "frequency": 19.0
+    },
+    {
+      "class": "herbal",
+      "gin_auroc": 0.6405799563212812,
+      "gat_auroc": 0.6133875272991992,
+      "avg_auroc": 0.6269837418102402,
+      "frequency": 130.0
+    },
+    {
+      "class": "green",
+      "gin_auroc": 0.659742430225276,
+      "gat_auroc": 0.7255508663207587,
+      "avg_auroc": 0.6926466482730174,
+      "frequency": 586.0
+    },
+    {
+      "class": "spicy",
+      "gin_auroc": 0.6584454825664671,
+      "gat_auroc": 0.7281188790306663,
+      "avg_auroc": 0.6932821807985667,
+      "frequency": 61.0
+    },
+    {
+      "class": "citrus",
+      "gin_auroc": 0.752811569442038,
+      "gat_auroc": 0.7539116173928461,
+      "avg_auroc": 0.753361593417442,
+      "frequency": 77.0
+    },
+    {
+      "class": "cooling",
+      "gin_auroc": 0.7249240121580547,
+      "gat_auroc": 0.8009726443768997,
+      "avg_auroc": 0.7629483282674772,
+      "frequency": 10.0
+    },
+    {
+      "class": "creamy",
+      "gin_auroc": 0.8773083971617874,
+      "gat_auroc": 0.6842958507588929,
+      "avg_auroc": 0.7808021239603402,
+      "frequency": 26.0
+    },
+    {
+      "class": "fruity",
+      "gin_auroc": 0.7858938970717076,
+      "gat_auroc": 0.793164225564065,
+      "avg_auroc": 0.7895290613178862,
+      "frequency": 1105.0
+    },
+    {
+      "class": "aldehydic",
+      "gin_auroc": 0.8027059802639401,
+      "gat_auroc": 0.7883485911306622,
+      "avg_auroc": 0.7955272856973012,
+      "frequency": 65.0
+    },
+    {
+      "class": "buttery",
+      "gin_auroc": 0.9060161385636365,
+      "gat_auroc": 0.7326207123769082,
+      "avg_auroc": 0.8193184254702723,
+      "frequency": 59.0
+    },
+    {
+      "class": "floral",
+      "gin_auroc": 0.8467571077091306,
+      "gat_auroc": 0.8216634053696298,
+      "avg_auroc": 0.8342102565393802,
+      "frequency": 944.0
+    },
+    {
+      "class": "musk",
+      "gin_auroc": 0.8501412717864922,
+      "gat_auroc": 0.8326269744008715,
+      "avg_auroc": 0.8413841230936818,
+      "frequency": 36.0
+    },
+    {
+      "class": "balsamic",
+      "gin_auroc": 0.8512891026234143,
+      "gat_auroc": 0.8390732843685548,
+      "avg_auroc": 0.8451811934959845,
+      "frequency": 283.0
+    },
+    {
+      "class": "caramellic",
+      "gin_auroc": 0.8208263794819599,
+      "gat_auroc": 0.8812219819037712,
+      "avg_auroc": 0.8510241806928656,
+      "frequency": 41.0
+    },
+    {
+      "class": "fatty",
+      "gin_auroc": 0.8545421810699587,
+      "gat_auroc": 0.8731790123456791,
+      "avg_auroc": 0.8638605967078189,
+      "frequency": 60.0
+    },
+    {
+      "class": "minty",
+      "gin_auroc": 0.8640458531796049,
+      "gat_auroc": 0.8709848615515251,
+      "avg_auroc": 0.867515357365565,
+      "frequency": 23.0
+    },
+    {
+      "class": "fermented",
+      "gin_auroc": 0.9292806034721838,
+      "gat_auroc": 0.8160879693826613,
+      "avg_auroc": 0.8726842864274225,
+      "frequency": 22.0
+    },
+    {
+      "class": "waxy",
+      "gin_auroc": 0.914088074998439,
+      "gat_auroc": 0.876856452202767,
+      "avg_auroc": 0.895472263600603,
+      "frequency": 142.0
+    },
+    {
+      "class": "woody",
+      "gin_auroc": 0.8898349626826447,
+      "gat_auroc": 0.9076856883725819,
+      "avg_auroc": 0.8987603255276133,
+      "frequency": 129.0
+    },
+    {
+      "class": "amber",
+      "gin_auroc": 0.8473999593743652,
+      "gat_auroc": 0.9619303947457511,
+      "avg_auroc": 0.9046651770600582,
+      "frequency": 18.0
+    },
+    {
+      "class": "nutty",
+      "gin_auroc": 0.87634375,
+      "gat_auroc": 0.942075,
+      "avg_auroc": 0.909209375,
+      "frequency": 100.0
+    },
+    {
+      "class": "animal",
+      "gin_auroc": 0.9427762612475988,
+      "gat_auroc": 0.9184106763724599,
+      "avg_auroc": 0.9305934688100294,
+      "frequency": 3.0
+    },
+    {
+      "class": "ethereal",
+      "gin_auroc": 0.9466421343146274,
+      "gat_auroc": 0.9311993332232522,
+      "avg_auroc": 0.9389207337689398,
+      "frequency": 39.0
+    },
+    {
+      "class": "coffee",
+      "gin_auroc": 0.933647607461476,
+      "gat_auroc": 0.9693582725060828,
+      "avg_auroc": 0.9515029399837793,
+      "frequency": 12.0
+    },
+    {
+      "class": "honey",
+      "gin_auroc": 0.9776676563045757,
+      "gat_auroc": 0.9547349807893817,
+      "avg_auroc": 0.9662013185469787,
+      "frequency": 28.0
+    },
+    {
+      "class": "camphoreous",
+      "gin_auroc": 0.9696525194770206,
+      "gat_auroc": 0.9727883010649684,
+      "avg_auroc": 0.9712204102709945,
+      "frequency": 41.0
+    },
+    {
+      "class": "alliaceous",
+      "gin_auroc": 0.9690309487569762,
+      "gat_auroc": 0.9758904109589042,
+      "avg_auroc": 0.9724606798579402,
+      "frequency": 15.0
+    },
+    {
+      "class": "sulfurous",
+      "gin_auroc": 0.9785736386138615,
+      "gat_auroc": 0.982527664531159,
+      "avg_auroc": 0.9805506515725102,
+      "frequency": 68.0
+    },
+    {
+      "class": "vanilla",
+      "gin_auroc": 0.9926283026374295,
+      "gat_auroc": 0.9697409374926867,
+      "avg_auroc": 0.9811846200650581,
+      "frequency": 13.0
+    }
+  ],
+  "frequency_analysis": [
+    {
+      "class": "fruity",
+      "frequency": 1105.0,
+      "percentage": 33.48484802246094
+    },
+    {
+      "class": "floral",
+      "frequency": 944.0,
+      "percentage": 28.606060028076172
+    },
+    {
+      "class": "green",
+      "frequency": 586.0,
+      "percentage": 17.75757598876953
+    },
+    {
+      "class": "balsamic",
+      "frequency": 283.0,
+      "percentage": 8.57575798034668
+    },
+    {
+      "class": "waxy",
+      "frequency": 142.0,
+      "percentage": 4.303030490875244
+    },
+    {
+      "class": "herbal",
+      "frequency": 130.0,
+      "percentage": 3.939393997192383
+    },
+    {
+      "class": "woody",
+      "frequency": 129.0,
+      "percentage": 3.909090995788574
+    },
+    {
+      "class": "nutty",
+      "frequency": 100.0,
+      "percentage": 3.0303030014038086
+    },
+    {
+      "class": "citrus",
+      "frequency": 77.0,
+      "percentage": 2.3333332538604736
+    },
+    {
+      "class": "musty",
+      "frequency": 75.0,
+      "percentage": 2.2727272510528564
+    },
+    {
+      "class": "earthy",
+      "frequency": 69.0,
+      "percentage": 2.090909242630005
+    },
+    {
+      "class": "sulfurous",
+      "frequency": 68.0,
+      "percentage": 2.0606062412261963
+    },
+    {
+      "class": "aldehydic",
+      "frequency": 65.0,
+      "percentage": 1.9696969985961914
+    },
+    {
+      "class": "spicy",
+      "frequency": 61.0,
+      "percentage": 1.848484754562378
+    },
+    {
+      "class": "fatty",
+      "frequency": 60.0,
+      "percentage": 1.8181817531585693
+    },
+    {
+      "class": "buttery",
+      "frequency": 59.0,
+      "percentage": 1.7878787517547607
+    },
+    {
+      "class": "berry",
+      "frequency": 43.0,
+      "percentage": 1.303030252456665
+    },
+    {
+      "class": "camphoreous",
+      "frequency": 41.0,
+      "percentage": 1.2424242496490479
+    },
+    {
+      "class": "caramellic",
+      "frequency": 41.0,
+      "percentage": 1.2424242496490479
+    },
+    {
+      "class": "ethereal",
+      "frequency": 39.0,
+      "percentage": 1.1818181276321411
+    },
+    {
+      "class": "musk",
+      "frequency": 36.0,
+      "percentage": 1.0909091234207153
+    },
+    {
+      "class": "honey",
+      "frequency": 28.0,
+      "percentage": 0.8484848737716675
+    },
+    {
+      "class": "creamy",
+      "frequency": 26.0,
+      "percentage": 0.7878787517547607
+    },
+    {
+      "class": "minty",
+      "frequency": 23.0,
+      "percentage": 0.6969696879386902
+    },
+    {
+      "class": "fermented",
+      "frequency": 22.0,
+      "percentage": 0.6666666865348816
+    },
+    {
+      "class": "soapy",
+      "frequency": 19.0,
+      "percentage": 0.5757575631141663
+    },
+    {
+      "class": "amber",
+      "frequency": 18.0,
+      "percentage": 0.5454545617103577
+    },
+    {
+      "class": "alliaceous",
+      "frequency": 15.0,
+      "percentage": 0.45454543828964233
+    },
+    {
+      "class": "vanilla",
+      "frequency": 13.0,
+      "percentage": 0.39393937587738037
+    },
+    {
+      "class": "coffee",
+      "frequency": 12.0,
+      "percentage": 0.3636363744735718
+    },
+    {
+      "class": "tropical",
+      "frequency": 11.0,
+      "percentage": 0.3333333432674408
+    },
+    {
+      "class": "cooling",
+      "frequency": 10.0,
+      "percentage": 0.3030302822589874
+    },
+    {
+      "class": "animal",
+      "frequency": 3.0,
+      "percentage": 0.09090909361839294
+    }
+  ]
+}

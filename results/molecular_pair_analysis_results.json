@@ -1,0 +1,7 @@
+{
+  "mean_tanimoto_similarity": 0.16855202142190123,
+  "gin_mean_auroc_per_sample": 0.9018802611768407,
+  "gat_mean_auroc_per_sample": 0.9127163917633885,
+  "low_sim_high_perf_gin_count": 1573,
+  "low_sim_high_perf_gat_count": 1638
+}
