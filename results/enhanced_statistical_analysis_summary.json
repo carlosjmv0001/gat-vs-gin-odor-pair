@@ -1,0 +1,38 @@
+{
+  "gin_metrics": [
+    0.9509841652658754,
+    0.9008054255431446,
+    0.7946399175614408
+  ],
+  "gat_metrics": [
+    0.9367393317230113,
+    0.904760238383843,
+    0.8056104604223204
+  ],
+  "analysis_names": [
+    "Cross-Validation",
+    "Standardized (Micro)",
+    "Standardized (Macro)"
+  ],
+  "overall_gin_mean": 0.8821431694568203,
+  "overall_gat_mean": 0.8823700101763916,
+  "overall_gin_std": 0.06517714732041213,
+  "overall_gat_std": 0.055825244955632757,
+  "effect_sizes": {
+    "cohens_d": -0.003052236669257521,
+    "hedges_g": -0.002441789335406017,
+    "glass_delta": 0.0034803720153046814
+  },
+  "power_analysis": {
+    "effect_size": 0.003052236669257521,
+    "current_power": 0.05000042383356429,
+    "required_n": null,
+    "target_power": 0.8
+  },
+  "non_parametric_tests": {
+    "wilcoxon_p_value": 0.0625,
+    "mannwhitney_p_value": 0.007936507936507936,
+    "ks_p_value": 0.007936507936507936,
+    "permutation_p_value": 0.0037
+  }
+}

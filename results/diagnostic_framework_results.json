@@ -1,0 +1,332 @@
+{
+  "high_impact_table": [
+    {
+      "Note": "soapy",
+      "AUROC_GIN": 0.4064550281525209,
+      "AUROC_GAT": 0.7048877909494858,
+      "Delta": 0.29843276279696496,
+      "Frequency": 19.0,
+      "Delta_Rank": 1.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "creamy",
+      "AUROC_GIN": 0.8773083971617874,
+      "AUROC_GAT": 0.6842958507588929,
+      "Delta": -0.19301254640289456,
+      "Frequency": 26.0,
+      "Delta_Rank": 2.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "buttery",
+      "AUROC_GIN": 0.9060161385636365,
+      "AUROC_GAT": 0.7326207123769082,
+      "Delta": -0.17339542618672832,
+      "Frequency": 59.0,
+      "Delta_Rank": 3.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "amber",
+      "AUROC_GIN": 0.8473999593743652,
+      "AUROC_GAT": 0.9619303947457511,
+      "Delta": 0.11453043537138596,
+      "Frequency": 18.0,
+      "Delta_Rank": 4.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "fermented",
+      "AUROC_GIN": 0.9292806034721838,
+      "AUROC_GAT": 0.8160879693826613,
+      "Delta": -0.11319263408952251,
+      "Frequency": 22.0,
+      "Delta_Rank": 5.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "berry",
+      "AUROC_GIN": 0.47953959628992293,
+      "AUROC_GAT": 0.5762043826891632,
+      "Delta": 0.09666478639924025,
+      "Frequency": 43.0,
+      "Delta_Rank": 6.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "cooling",
+      "AUROC_GIN": 0.7249240121580547,
+      "AUROC_GAT": 0.8009726443768997,
+      "Delta": 0.07604863221884506,
+      "Frequency": 10.0,
+      "Delta_Rank": 7.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "tropical",
+      "AUROC_GIN": 0.37668260593161773,
+      "AUROC_GAT": 0.4499571574670389,
+      "Delta": 0.07327455153542117,
+      "Frequency": 11.0,
+      "Delta_Rank": 8.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "musty",
+      "AUROC_GIN": 0.5122356589147288,
+      "AUROC_GAT": 0.5850418604651163,
+      "Delta": 0.07280620155038753,
+      "Frequency": 75.0,
+      "Delta_Rank": 9.0,
+      "Type": "conceptual_aggregate"
+    },
+    {
+      "Note": "spicy",
+      "AUROC_GIN": 0.6584454825664671,
+      "AUROC_GAT": 0.7281188790306663,
+      "Delta": 0.06967339646419923,
+      "Frequency": 61.0,
+      "Delta_Rank": 10.0,
+      "Type": "conceptual_aggregate"
+    },
+    {
+      "Note": "green",
+      "AUROC_GIN": 0.659742430225276,
+      "AUROC_GAT": 0.7255508663207587,
+      "Delta": 0.0658084360954827,
+      "Frequency": 586.0,
+      "Delta_Rank": 11.0,
+      "Type": "conceptual_aggregate"
+    },
+    {
+      "Note": "nutty",
+      "AUROC_GIN": 0.87634375,
+      "AUROC_GAT": 0.942075,
+      "Delta": 0.06573125000000002,
+      "Frequency": 100.0,
+      "Delta_Rank": 12.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "caramellic",
+      "AUROC_GIN": 0.8208263794819599,
+      "AUROC_GAT": 0.8812219819037712,
+      "Delta": 0.0603956024218113,
+      "Frequency": 41.0,
+      "Delta_Rank": 13.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "waxy",
+      "AUROC_GIN": 0.914088074998439,
+      "AUROC_GAT": 0.876856452202767,
+      "Delta": -0.03723162279567205,
+      "Frequency": 142.0,
+      "Delta_Rank": 14.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "coffee",
+      "AUROC_GIN": 0.933647607461476,
+      "AUROC_GAT": 0.9693582725060828,
+      "Delta": 0.03571066504460674,
+      "Frequency": 12.0,
+      "Delta_Rank": 15.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "earthy",
+      "AUROC_GIN": 0.38460296314238424,
+      "AUROC_GAT": 0.35064748653219047,
+      "Delta": -0.03395547661019377,
+      "Frequency": 69.0,
+      "Delta_Rank": 16.0,
+      "Type": "conceptual_aggregate"
+    },
+    {
+      "Note": "herbal",
+      "AUROC_GIN": 0.6405799563212812,
+      "AUROC_GAT": 0.6133875272991992,
+      "Delta": -0.027192429022081965,
+      "Frequency": 130.0,
+      "Delta_Rank": 17.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "floral",
+      "AUROC_GIN": 0.8467571077091306,
+      "AUROC_GAT": 0.8216634053696298,
+      "Delta": -0.025093702339500812,
+      "Frequency": 944.0,
+      "Delta_Rank": 18.0,
+      "Type": "conceptual_aggregate"
+    },
+    {
+      "Note": "animal",
+      "AUROC_GIN": 0.9427762612475988,
+      "AUROC_GAT": 0.9184106763724599,
+      "Delta": -0.024365584875138957,
+      "Frequency": 3.0,
+      "Delta_Rank": 19.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "honey",
+      "AUROC_GIN": 0.9776676563045757,
+      "AUROC_GAT": 0.9547349807893817,
+      "Delta": -0.022932675515194068,
+      "Frequency": 28.0,
+      "Delta_Rank": 20.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "vanilla",
+      "AUROC_GIN": 0.9926283026374295,
+      "AUROC_GAT": 0.9697409374926867,
+      "Delta": -0.022887365144742766,
+      "Frequency": 13.0,
+      "Delta_Rank": 21.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "fatty",
+      "AUROC_GIN": 0.8545421810699587,
+      "AUROC_GAT": 0.8731790123456791,
+      "Delta": 0.018636831275720356,
+      "Frequency": 60.0,
+      "Delta_Rank": 22.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "woody",
+      "AUROC_GIN": 0.8898349626826447,
+      "AUROC_GAT": 0.9076856883725819,
+      "Delta": 0.017850725689937175,
+      "Frequency": 129.0,
+      "Delta_Rank": 23.0,
+      "Type": "conceptual_aggregate"
+    },
+    {
+      "Note": "musk",
+      "AUROC_GIN": 0.8501412717864922,
+      "AUROC_GAT": 0.8326269744008715,
+      "Delta": -0.017514297385620714,
+      "Frequency": 36.0,
+      "Delta_Rank": 24.0,
+      "Type": "conceptual_aggregate"
+    },
+    {
+      "Note": "ethereal",
+      "AUROC_GIN": 0.9466421343146274,
+      "AUROC_GAT": 0.9311993332232522,
+      "Delta": -0.015442801091375191,
+      "Frequency": 39.0,
+      "Delta_Rank": 25.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "aldehydic",
+      "AUROC_GIN": 0.8027059802639401,
+      "AUROC_GAT": 0.7883485911306622,
+      "Delta": -0.014357389133277887,
+      "Frequency": 65.0,
+      "Delta_Rank": 26.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "balsamic",
+      "AUROC_GIN": 0.8512891026234143,
+      "AUROC_GAT": 0.8390732843685548,
+      "Delta": -0.012215818254859512,
+      "Frequency": 283.0,
+      "Delta_Rank": 27.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "fruity",
+      "AUROC_GIN": 0.7858938970717076,
+      "AUROC_GAT": 0.793164225564065,
+      "Delta": 0.007270328492357314,
+      "Frequency": 1105.0,
+      "Delta_Rank": 28.0,
+      "Type": "conceptual_aggregate"
+    },
+    {
+      "Note": "minty",
+      "AUROC_GIN": 0.8640458531796049,
+      "AUROC_GAT": 0.8709848615515251,
+      "Delta": 0.006939008371920186,
+      "Frequency": 23.0,
+      "Delta_Rank": 29.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "alliaceous",
+      "AUROC_GIN": 0.9690309487569762,
+      "AUROC_GAT": 0.9758904109589042,
+      "Delta": 0.006859462201928013,
+      "Frequency": 15.0,
+      "Delta_Rank": 30.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "sulfurous",
+      "AUROC_GIN": 0.9785736386138615,
+      "AUROC_GAT": 0.982527664531159,
+      "Delta": 0.003954025917297543,
+      "Frequency": 68.0,
+      "Delta_Rank": 31.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "camphoreous",
+      "AUROC_GIN": 0.9696525194770206,
+      "AUROC_GAT": 0.9727883010649684,
+      "Delta": 0.0031357815879478057,
+      "Frequency": 41.0,
+      "Delta_Rank": 32.0,
+      "Type": "structural_marker"
+    },
+    {
+      "Note": "citrus",
+      "AUROC_GIN": 0.752811569442038,
+      "AUROC_GAT": 0.7539116173928461,
+      "Delta": 0.0011000479508080918,
+      "Frequency": 77.0,
+      "Delta_Rank": 33.0,
+      "Type": "structural_marker"
+    }
+  ],
+  "inductive_bias_analysis": {
+    "delta_statistics": {
+      "mean_delta": 0.0109707018951351,
+      "std_delta": 0.08475312937417076,
+      "large_positive_deltas": 2,
+      "large_negative_deltas": 3,
+      "statistical_significance": [
+        0.7435935968200782,
+        0.462547510362712
+      ]
+    },
+    "gat_dominated_count": 10,
+    "gin_dominated_count": 3
+  },
+  "conditional_strategy": {
+    "gat_preferred_notes": [
+      "soapy",
+      "amber"
+    ],
+    "gin_preferred_notes": [
+      "creamy",
+      "buttery",
+      "fermented"
+    ],
+    "ambiguous_notes": []
+  },
+  "conditional_simulation": {
+    "conditional_mean_auroc": 0.8136488034875938,
+    "improvement_over_gin": 0.01900904496040834,
+    "improvement_over_gat": 0.00803834306527329
+  }
+}

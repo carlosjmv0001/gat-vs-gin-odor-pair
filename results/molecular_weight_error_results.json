@@ -1,0 +1,10 @@
+{
+  "gin_bce_mean": 0.11731466608556812,
+  "gat_bce_mean": 0.11144316654046338,
+  "gin_brier_mean": 0.0300116026751956,
+  "gat_brier_mean": 0.02933460345838226,
+  "gin_entropy_mean": 2.73917555809021,
+  "gat_entropy_mean": 3.2271528244018555,
+  "mw_correlation_gin": -0.013703248851386097,
+  "mw_correlation_gat": -0.06242259302689674
+}

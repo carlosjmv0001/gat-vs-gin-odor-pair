@@ -1,0 +1,29 @@
+{
+  "training_time": {
+    "gin_mean": 210.04576206207275,
+    "gin_std": 16.93233621764463,
+    "gat_mean": 503.395435667038,
+    "gat_std": 18.651823025106125,
+    "ratio": 2.396598868385045
+  },
+  "memory_usage": {
+    "gin_mb": 0.10986328125,
+    "gat_mb": 0.10986328125,
+    "ratio": 1.0
+  },
+  "batch_size": {
+    "gin_max": 512,
+    "gat_max": 512,
+    "ratio": 1.0
+  },
+  "convergence": {
+    "gin_epochs": 18,
+    "gat_epochs": 18,
+    "rare_classes_count": 9
+  },
+  "device": "cuda",
+  "dataset_sizes": {
+    "train": 116498,
+    "test": 3300
+  }
+}
