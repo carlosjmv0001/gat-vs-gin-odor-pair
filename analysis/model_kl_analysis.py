@@ -12,7 +12,6 @@ from pairing.data import Dataset, loader, PairData
 from main import MixturePredictor as GINMixturePredictor, GCN, make_sequential
 from new1_main import MixturePredictor as GATMixturePredictor, GAT
 
-# Critical: Add the classes to the main module so PyTorch can find them during unpickling
 sys.modules['__main__'].MixturePredictor = GINMixturePredictor  # For GIN model
 sys.modules['__main__'].GCN = GCN
 sys.modules['__main__'].GAT = GAT
@@ -24,11 +23,9 @@ def load_models():
 
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-    # Load GIN model first (it expects main.py's MixturePredictor)
     gin_model = torch.load(os.path.join(base_dir, "runs/1adc5394/model.pt"),
                           map_location=device, weights_only=False)
 
-    # Now switch to GAT's MixturePredictor for the GAT model
     sys.modules['__main__'].MixturePredictor = GATMixturePredictor
     gat_model = torch.load(os.path.join(base_dir, "runs/702a60ea/model.pt"),
                           map_location=device, weights_only=False)
@@ -116,16 +113,13 @@ def analyze_models():
 if __name__ == "__main__":
     print("Starting KL analysis...")
 
-    # Get project base directory
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-    # Create results directory using absolute path
     results_dir = os.path.join(base_dir, "results")
     os.makedirs(results_dir, exist_ok=True)
 
     results = analyze_models()
 
-    # Save results using absolute path
     results_file = os.path.join(results_dir, 'kl_analysis_results.json')
     with open(results_file, 'w') as f:
         results_serializable = {

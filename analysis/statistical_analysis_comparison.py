@@ -16,8 +16,6 @@ def load_all_results():
   
     # Get project base directory  
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  
-  
-    # Adjust paths for the results directory using absolute path  
     results_dir = os.path.join(base_dir, "results")  
   
     # Load cross-validation results  
@@ -36,15 +34,15 @@ def load_all_results():
     except FileNotFoundError:  
         print("File kl_analysis_results.json not found")  
   
-    # Load standardized evaluation results  
+    # Load standardized evaluation results
     try:  
-        with open(os.path.join(results_dir, 'standardized_evaluation_results.json'), 'r') as f:  
+        with open(os.path.join(results_dir, 'enhanced_standardized_evaluation_results.json'), 'r') as f:  
             std_results = json.load(f)  
             results['standardized'] = std_results  
     except FileNotFoundError:  
-        print("File standardized_evaluation_results.json not found")  
+        print("File enhanced_standardized_evaluation_results.json not found")  
   
-    return results  
+    return results 
   
 def calculate_cohens_d(group1, group2):  
     """Calculate Cohen's d effect size"""  

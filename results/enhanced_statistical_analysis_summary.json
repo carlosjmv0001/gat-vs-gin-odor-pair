@@ -1,11 +1,11 @@
 {
   "gin_metrics": [
-    0.9509841652658754,
-    0.9008054255431446,
-    0.7946399175614408
+    0.9509841649348567,
+    0.9008054365299077,
+    0.7946400760343452
   ],
   "gat_metrics": [
-    0.9367393317230113,
+    0.9367393312762328,
     0.904760238383843,
     0.8056104604223204
   ],
@@ -14,18 +14,18 @@
     "Standardized (Micro)",
     "Standardized (Macro)"
   ],
-  "overall_gin_mean": 0.8821431694568203,
-  "overall_gat_mean": 0.8823700101763916,
-  "overall_gin_std": 0.06517714732041213,
-  "overall_gat_std": 0.055825244955632757,
+  "overall_gin_mean": 0.8821432258330365,
+  "overall_gat_mean": 0.8823700100274654,
+  "overall_gin_std": 0.06517707733348985,
+  "overall_gat_std": 0.05582524481059059,
   "effect_sizes": {
-    "cohens_d": -0.003052236669257521,
-    "hedges_g": -0.002441789335406017,
-    "glass_delta": 0.0034803720153046814
+    "cohens_d": -0.0030514779932718458,
+    "hedges_g": -0.002441182394617477,
+    "glass_delta": 0.0034795084975737184
   },
   "power_analysis": {
-    "effect_size": 0.003052236669257521,
-    "current_power": 0.05000042383356429,
+    "effect_size": 0.0030514779932718458,
+    "current_power": 0.05000042362289054,
     "required_n": null,
     "target_power": 0.8
   },
@@ -33,6 +33,6 @@
     "wilcoxon_p_value": 0.0625,
     "mannwhitney_p_value": 0.007936507936507936,
     "ks_p_value": 0.007936507936507936,
-    "permutation_p_value": 0.0037
+    "permutation_p_value": 0.0066
   }
 }

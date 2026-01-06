@@ -71,7 +71,6 @@ def calculate_ece(y_true, y_prob, n_bins=10):
   
     return ece  
   
-# NOVO: Função para calcular ECE por classe  
 def calculate_per_class_ece(y_true, y_prob, n_bins=10):  
     """Calculate ECE for each class individually"""  
     n_classes = y_true.shape[1]  
@@ -80,8 +79,7 @@ def calculate_per_class_ece(y_true, y_prob, n_bins=10):
     for class_idx in range(n_classes):  
         class_true = y_true[:, class_idx]  
         class_prob = y_prob[:, class_idx]  
-          
-        # Skip classes with no positive samples  
+            
         if class_true.sum() == 0:  
             ece_per_class[class_idx] = 0.0  
             continue  
@@ -99,11 +97,9 @@ def create_reliability_diagram(y_true, y_prob, model_name, n_bins=10):
   
     fig, ax = plt.subplots(figsize=(8, 6))  
   
-    # Plot calibration curve  
     ax.plot(mean_predicted_value, fraction_of_positives, "s-",  
             label=f'{model_name} (ECE = {calculate_ece(y_true, y_prob):.3f})')  
   
-    # Perfect calibration line  
     ax.plot([0, 1], [0, 1], "k:", label="Perfect Calibration")  
   
     ax.set_xlabel('Mean Predicted Confidence')  
@@ -118,25 +114,20 @@ def analyze_calibration():
     """Full calibration analysis"""  
     print("=== MODEL CALIBRATION ANALYSIS ===")  
   
-    # Create results directory  
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  
     results_dir = os.path.join(base_dir, "results")  
     os.makedirs(results_dir, exist_ok=True)  
   
-    # Load models and data  
     gin_model, gat_model, device = load_models()  
     test_dataset = Dataset(is_train=False)  
   
-    # Get predictions  
     gin_preds, labels = get_predictions_and_labels(gin_model, test_dataset, device)  
     gat_preds, _ = get_predictions_and_labels(gat_model, test_dataset, device)  
   
-    # Flatten for global analysis  
     gin_preds_flat = gin_preds.flatten()  
     gat_preds_flat = gat_preds.flatten()  
     labels_flat = labels.flatten()  
   
-    # Calculate calibration metrics  
     gin_ece = calculate_ece(labels_flat, gin_preds_flat)  
     gat_ece = calculate_ece(labels_flat, gat_preds_flat)  
   
@@ -146,13 +137,11 @@ def analyze_calibration():
     print(f"GIN - ECE: {gin_ece:.4f}, Brier Score: {gin_brier:.4f}")  
     print(f"GAT - ECE: {gat_ece:.4f}, Brier Score: {gat_brier:.4f}")  
   
-    # NOVO: Cálculo do ECE por classe  
     gin_ece_per_class = calculate_per_class_ece(labels, gin_preds)  
     gat_ece_per_class = calculate_per_class_ece(labels, gat_preds)  
   
-    # NOVO: Análise de classes raras vs frequentes  
     class_frequencies = labels.sum(axis=0)  
-    freq_threshold = np.percentile(class_frequencies, 25)  # 25% mais raras  
+    freq_threshold = np.percentile(class_frequencies, 25) 
   
     rare_classes = np.where(class_frequencies <= freq_threshold)[0]  
     frequent_classes = np.where(class_frequencies > freq_threshold)[0]  
@@ -165,7 +154,6 @@ def analyze_calibration():
     print(f"GIN - ECE Classes Raras: {gin_rare_ece:.4f}, ECE Classes Frequentes: {gin_frequent_ece:.4f}")  
     print(f"GAT - ECE Classes Raras: {gat_rare_ece:.4f}, ECE Classes Frequentes: {gat_frequent_ece:.4f}")  
   
-    # Create reliability diagrams  
     fig1 = create_reliability_diagram(labels_flat, gin_preds_flat, "GIN")  
     plt.savefig(os.path.join(results_dir, 'gin_reliability_diagram.png'), dpi=300, bbox_inches='tight')  
     plt.close(fig1)  
@@ -174,10 +162,8 @@ def analyze_calibration():
     plt.savefig(os.path.join(results_dir, 'gat_reliability_diagram.png'), dpi=300, bbox_inches='tight')  
     plt.close(fig2)  
   
-    # Side-by-side comparison  
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 6))  
   
-    # Calibration metrics  
     metrics = ['ECE', 'Brier Score']  
     gin_metrics = [gin_ece, gin_brier]  
     gat_metrics = [gat_ece, gat_brier]  
@@ -194,7 +180,6 @@ def analyze_calibration():
     ax1.legend()  
     ax1.grid(True, alpha=0.3)  
   
-    # Confidence histogram  
     ax2.hist(gin_preds_flat, bins=50, alpha=0.7, label='GIN', density=True)  
     ax2.hist(gat_preds_flat, bins=50, alpha=0.7, label='GAT', density=True)  
     ax2.set_xlabel('Predicted Confidence')  
@@ -207,7 +192,6 @@ def analyze_calibration():
     plt.savefig(os.path.join(results_dir, 'calibration_comparison.png'), dpi=300, bbox_inches='tight')  
     plt.close()  
   
-    # NOVO: Gráfico de ECE vs Frequência da Classe  
     fig3, ax = plt.subplots(figsize=(10, 6))  
     ax.scatter(class_frequencies,   
                [gin_ece_per_class[i] for i in range(len(class_frequencies))],   
@@ -224,7 +208,6 @@ def analyze_calibration():
     plt.savefig(os.path.join(results_dir, 'ece_vs_frequency.png'), dpi=300, bbox_inches='tight')  
     plt.close(fig3)  
   
-    # NOVO: Save results com métricas adicionais  
     results = {  
         'gin_ece': gin_ece,  
         'gat_ece': gat_ece,  
